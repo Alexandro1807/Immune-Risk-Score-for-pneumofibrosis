@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Immune_Risk_Score_for_pneumofibrosis"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Immune Risk Score for pneumofibrosis" Height="250" Width="300" ResizeMode="NoResize">
     <Grid>
-
+        <Label Content="Лейкоциты" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="TGF-β, нг/мл" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top"/>
+        <Label Content="IL-8, пг/мл" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top"/>
+        <Label Content="CD4+/CD8+" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBox1" Margin="153,14,10,0" TextWrapping="Wrap" VerticalAlignment="Top" PreviewTextInput="TextBox1_PreviewTextInput"/>
+        <TextBox x:Name="TextBox2" Margin="153,44,10,0" TextWrapping="Wrap" VerticalAlignment="Top" PreviewTextInput="TextBox2_PreviewTextInput"/>
+        <TextBox x:Name="TextBox3" Margin="153,74,10,0" TextWrapping="Wrap" VerticalAlignment="Top" PreviewTextInput="TextBox3_PreviewTextInput"/>
+        <TextBox x:Name="TextBox4" Margin="153,104,10,0" TextWrapping="Wrap" VerticalAlignment="Top" PreviewTextInput="TextBox4_PreviewTextInput"/>
+        <Button x:Name="ButtonStart" Content="Рассчитать риск" Margin="10,131,10,0" VerticalAlignment="Top" Click="ButtonStart_Click"/>
+        <Button x:Name="ButtonRestart" Content="Повторить" Margin="10,156,10,0" VerticalAlignment="Top" Click="ButtonRestart_Click"/>
+        <Label x:Name="LabelResult" Content="Уровень риска:" HorizontalAlignment="Left" Margin="10,0,0,10" Height="26" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="TextBoxResult" IsReadOnly="True" IsEnabled="False" Margin="153,0,10,14" TextWrapping="Wrap" Height="18" VerticalAlignment="Bottom"/>
+        <Ellipse x:Name="Ellipse1" HorizontalAlignment="Left" Height="18" Margin="130,14,0,0" Stroke="Black" VerticalAlignment="Top" Width="18"/>
+        <Ellipse x:Name="Ellipse2" HorizontalAlignment="Left" Height="18" Margin="130,44,0,0" Stroke="Black" VerticalAlignment="Top" Width="18"/>
+        <Ellipse x:Name="Ellipse3" HorizontalAlignment="Left" Height="18" Margin="130,74,0,0" Stroke="Black" VerticalAlignment="Top" Width="18"/>
+        <Ellipse x:Name="Ellipse4" HorizontalAlignment="Left" Height="18" Margin="130,104,0,0" Stroke="Black" VerticalAlignment="Top" Width="18"/>
+        <Ellipse x:Name="EllipseResult" HorizontalAlignment="Left" Margin="130,0,0,14" Stroke="Black" Width="18" Height="18" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>
