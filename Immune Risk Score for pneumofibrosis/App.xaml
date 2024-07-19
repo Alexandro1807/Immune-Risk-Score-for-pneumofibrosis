@@ -1,0 +1,9 @@
+﻿<Application x:Class="Immune_Risk_Score_for_pneumofibrosis.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Immune_Risk_Score_for_pneumofibrosis"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
